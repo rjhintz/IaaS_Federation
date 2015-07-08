@@ -46,8 +46,7 @@ Objective include:
     * Select `Download Credentials` at lower right. Save as `credentials.csv` (or some other name)
     * After successful download, select `Close` at lower right
     * **Login with the IAM Sign In URL:** Go to Dashboard. The IAM sign in link is displayed.
-    * 
-* Limit use of root account
+
 #####Multi Factor Authentication
 * Set up multi factor authentication
   * Activate MFS on the root account: Sign into root account
