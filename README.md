@@ -24,6 +24,7 @@ Objective include:
 
 ###AWS
 ####Access
+#####Initial Set Up
 * **Set up an administrative group** with full permissions, at least
     * Initially, one must use the root account because there are no other credentials
     * Log into console
@@ -47,15 +48,23 @@ Objective include:
     * **Login with the IAM Sign In URL:** Go to Dashboard. The IAM sign in link is displayed.
     * 
 * Limit use of root account
-
+#####Multi Factor Authentication
 * Set up multi factor authentication
-  *
-* Set up role based group for `Administrators`
-  *
-* Set up password policy
-  *  
-* Set up role based group for `Developers`
-  *
+  * Activate MFS on the root account: Sign into root account
+  * Select `Manage MFA` 
+  * Select `Virtual MFA Device` then `Next Step`
+  * Install [AWS MFA Virtual app ](https://play.google.com/store/apps/details?id=com.amazonaws.mobile.apps.Authenticator&hl=en)
+  * Associate virtual device with MFA
+* Delete root access key, if any. Select `Manage Security Credentials`; Delete access key, if any
+#####Set Up Role Based IAM Group for Developers
+Set up role based group for `Developers`
+* Select `Groups` from the left nav bar. 
+* Select `Create New Group`
+* Set new group name as `Developers_Base` then `Next Step`
+* Select up to two policies, then `Create Group`
+  * `EC2FullAccess`
+  * `S3FullAccess`
+* Create and add a user to the `Developers_Base` group
 
 ##Appendix
 ###Security Resources
