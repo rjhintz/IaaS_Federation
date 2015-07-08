@@ -55,6 +55,7 @@ Objective include:
   * Install [AWS MFA Virtual app ](https://play.google.com/store/apps/details?id=com.amazonaws.mobile.apps.Authenticator&hl=en)
   * Associate virtual device with MFA
 * Delete root access key, if any. Select `Manage Security Credentials`; Delete access key, if any
+
 #####Set Up Role Based IAM Group for Developers
 Set up role based group for `Developers`
 * Select `Groups` from the left nav bar. 
